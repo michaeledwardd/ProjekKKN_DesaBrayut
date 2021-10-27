@@ -30,7 +30,7 @@ $data = mysqli_fetch_assoc($query);
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Status</label>
-                <select class="form-select" aria-label="Default select example" name="kelompok" id="kelompok" value="<?php echo $data['status']; ?>" required>
+                <select class="form-select" aria-label="Default select example" name="status" id="status" value="<?php echo $data['status']; ?>" required>
                     <option value=""></option>
                     <option value="Tersedia">Tersedia</option>
                     <option value="Segera muncul">Segera muncul</option>

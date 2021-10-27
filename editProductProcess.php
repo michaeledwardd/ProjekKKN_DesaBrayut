@@ -6,7 +6,7 @@
         $namaProduct = $_POST['namaProduct'];
         $deskripsiProduct = $_POST['deskripsiProduct'];
         $harga = $_POST['harga'];
-        $status = $_POST['status']
+        $status = $_POST['status'];
 
         $query = mysqli_query($con, "UPDATE product SET namaProduct='$namaProduct', deskripsiProduct='$deskripsiProduct', harga='$harga' , status='$status' WHERE id='$id'") or die(mysqli_error($con));                     
         if($query)
