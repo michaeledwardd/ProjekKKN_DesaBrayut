@@ -18,7 +18,7 @@
             </thead>
             <tbody>
                 <?php
-                $query = mysqli_query($con, "SELECT * FROM keuangan") or die(mysqli_error($con));
+                $query = mysqli_query($con, "SELECT * FROM keuangan ORDER BY tanggal") or die(mysqli_error($con));
 
                 if (mysqli_num_rows($query) == 0) 
                 {
