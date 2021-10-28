@@ -40,7 +40,7 @@
                         <td>
                         <a href="editKeuanganPage.php?id='.$data['id'].'"><i style="color: green" class="fa fa-edit"></i></a>
 
-                        <a href="deleteBookingProcess.php?id='.$data['id'].'"
+                        <a href="deleteKeuanganProcess.php?id='.$data['id'].'"
                         onClick="return confirm ( \'Yakin?\')">
                         <i style="color: red" class="fa fa-trash"></i>
                         </a>
