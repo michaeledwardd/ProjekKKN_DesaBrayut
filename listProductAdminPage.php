@@ -17,7 +17,7 @@
             </thead>
             <tbody>
                 <?php
-                $query = mysqli_query($con, "SELECT * FROM product") or die(mysqli_error($con));
+                $query = mysqli_query($con, "SELECT * FROM product ORDER BY namaProduct") or die(mysqli_error($con));
 
                 if (mysqli_num_rows($query) == 0) 
                 {
