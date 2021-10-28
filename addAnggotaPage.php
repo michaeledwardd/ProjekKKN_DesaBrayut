@@ -21,7 +21,7 @@
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Usia</label>
-                <input class="form-control" id="usia" name="usia" aria-describedby="emailHelp">
+                <input class="form-control" id="usia" name="usia" aria-describedby="emailHelp" pattern="[0-9]{2}"required>
             </div>
 
             <div class="mb-3">
@@ -35,7 +35,7 @@
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Alamat</label>
-                <input class="form-control" id="alamatAnggota" name="alamatAnggota" aria-describedby="emailHelp">
+                <input class="form-control" id="alamatAnggota" name="alamatAnggota" aria-describedby="emailHelp" required>
             </div>
 
 

@@ -20,22 +20,22 @@ $data = mysqli_fetch_assoc($query);
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Uang masuk</label>
-                <input class="form-control" id="uangmasuk" name="uangmasuk" aria-describedby="emailHelp" value="<?php echo $data['uangmasuk']; ?>">
+                <input class="form-control" id="uangmasuk" name="uangmasuk" aria-describedby="emailHelp" value="<?php echo $data['uangmasuk']; ?>" pattern="[0-9]{1-10}" required>
             </div>
             
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">uang Keluar</label>
-                <input class="form-control" id="uangkeluar" name="uangkeluar" aria-describedby="emailHelp" value="<?php echo $data['uangkeluar']; ?>">
+                <input class="form-control" id="uangkeluar" name="uangkeluar" aria-describedby="emailHelp" value="<?php echo $data['uangkeluar']; ?>" pattern="[0-9]{1-10}" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Saldo</label>
-                <input class="form-control" id="saldo" name="saldo" aria-describedby="emailHelp" value="<?php echo $data['saldo']; ?>">
+                <input class="form-control" id="saldo" name="saldo" aria-describedby="emailHelp" value="<?php echo $data['saldo']; ?>" pattern="[0-9]{1-10}" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Keterangan</label>
-                <input class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp" value="<?php echo $data['keterangan']; ?>">
+                <input class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp" value="<?php echo $data['keterangan']; ?>" required>
             </div>
 
             <div class="d-grid gap-2">

@@ -12,22 +12,22 @@
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Uang masuk</label>
-                <input class="form-control" id="uangmasuk" name="uangmasuk" aria-describedby="emailHelp">
+                <input class="form-control" id="uangmasuk" name="uangmasuk" aria-describedby="emailHelp" pattern="[0-9]{1-10}" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Uang Keluar</label>
-                <input class="form-control" id="uangkeluar" name="uangkeluar" aria-describedby="emailHelp">
+                <input class="form-control" id="uangkeluar" name="uangkeluar" aria-describedby="emailHelp" pattern="[0-9]{1-10}" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Saldo</label>
-                <input class="form-control" id="saldo" name="saldo" aria-describedby="emailHelp" required>
+                <input class="form-control" id="saldo" name="saldo" aria-describedby="emailHelp" required pattern="[0-9]{1-10}">
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Keterangan</label>
-                <input class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp">
+                <input class="form-control" id="keterangan" name="keterangan" aria-describedby="emailHelp" required>
             </div>
 
 

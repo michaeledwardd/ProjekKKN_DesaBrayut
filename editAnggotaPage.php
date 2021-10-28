@@ -15,7 +15,7 @@ $data = mysqli_fetch_assoc($query);
        <input type="hidden" name="id" value="<?= $data['id'];?>">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama Anggota</label>
-                <input class="form-control" id="namaAnggota" name="namaAnggota" aria-describedby="emailHelp" value="<?php echo $data['namaAnggota']; ?>">
+                <input class="form-control" id="namaAnggota" name="namaAnggota" aria-describedby="emailHelp" value="<?php echo $data['namaAnggota']; ?>" required>
             </div>
 
             <div class="mb-3">
@@ -29,7 +29,7 @@ $data = mysqli_fetch_assoc($query);
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Usia</label>
-                <input class="form-control" id="usia" name="usia" aria-describedby="emailHelp" value="<?php echo $data['usia']; ?>">
+                <input class="form-control" id="usia" name="usia" aria-describedby="emailHelp" value="<?php echo $data['usia']; ?>" pattern="[0-9]{2}" required>
             </div>
 
             <div class="mb-3">
@@ -43,7 +43,7 @@ $data = mysqli_fetch_assoc($query);
             
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Alamat</label>
-                <input class="form-control" id="alamatAnggota" name="alamatAnggota" aria-describedby="emailHelp" value="<?php echo $data['alamatAnggota']; ?>">
+                <input class="form-control" id="alamatAnggota" name="alamatAnggota" aria-describedby="emailHelp" value="<?php echo $data['alamatAnggota']; ?>" required>
             </div>
 
             

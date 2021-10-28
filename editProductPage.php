@@ -15,17 +15,17 @@ $data = mysqli_fetch_assoc($query);
        <input type="hidden" name="id" value="<?= $data['id'];?>">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama Product</label>
-                <input class="form-control" id="namaProduct" name="namaProduct" aria-describedby="emailHelp" value="<?php echo $data['namaProduct']; ?>">
+                <input class="form-control" id="namaProduct" name="namaProduct" aria-describedby="emailHelp" value="<?php echo $data['namaProduct']; ?>" required>
             </div>
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Deskripsi Product</label>
-                <input class="form-control" id="deskripsiProduct" name="deskripsiProduct" aria-describedby="emailHelp" value="<?php echo $data['deskripsiProduct']; ?>">
+                <input class="form-control" id="deskripsiProduct" name="deskripsiProduct" aria-describedby="emailHelp" value="<?php echo $data['deskripsiProduct']; ?>" required>
             </div>
             
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Harga</label>
-                <input class="form-control" id="harga" name="harga" aria-describedby="emailHelp" value="<?php echo $data['harga']; ?>">
+                <input class="form-control" id="harga" name="harga" aria-describedby="emailHelp" value="<?php echo $data['harga']; ?>"pattern="[0-9]{1-10}" required>
             </div>
 
             <div class="mb-3">
