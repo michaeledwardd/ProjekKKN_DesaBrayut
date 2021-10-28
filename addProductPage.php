@@ -4,7 +4,7 @@
     <div class="container p-3 m-4 h-100" style="background-color: #FFFFFF; border-top: 5px solid #17337A; boxshadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" >
     <h4 >TAMBAH DATA PRODUCT</h4>
         <hr>
-        <form action="addKeuanganProcess.php" method="post">
+        <form action="addProductProcess.php" method="post">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama Product </label>
                 <input class="form-control" type="text" id="namaProduct" name="namaProduct" aria-describedby="emailHelp" required>
@@ -22,7 +22,7 @@
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Status</label>
-                <select class="form-select" aria-label="Default select example" name="kelompok" id="kelompok" required>
+                <select class="form-select" aria-label="Default select example" name="status" id="status" required>
                     <option value=""></option>
                     <option value="Tersedia">Tersedia</option>
                     <option value="Segera muncul">Segera muncul</option>

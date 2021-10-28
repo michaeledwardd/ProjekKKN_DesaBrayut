@@ -1,5 +1,4 @@
 <?php
-
     if(isset($_POST['tambahProduct']))
     {
         include('db.php');
@@ -10,7 +9,7 @@
         $status = $_POST['status'];
         
         $query = mysqli_query($con,
-        "INSERT INTO keuangan(namaProduct, deskripsiProduct, harga, status)
+        "INSERT INTO product(namaProduct, deskripsiProduct, harga, status)
         VALUES
         ('$namaProduct', '$deskripsiProduct', '$harga', '$status')")
         or die(mysqli_error($con)); 
@@ -26,14 +25,14 @@
         {
             echo
             '<script>
-            alert("Tambah data Keuangan gagal"); window.location = "addProductPage.php"
+            alert("Tambah data Product gagal"); window.location = "addProductPage.php"
             </script>';
         }
 
     }
     else
     {
-         echo
+        echo
         '<script>
         window.history.back()
         </script>';
