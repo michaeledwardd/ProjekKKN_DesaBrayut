@@ -17,7 +17,7 @@
 
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Harga</label>
-                <input class="form-control" id="harga" name="harga" aria-describedby="emailHelp" pattern="[0-9]{1-10}" required>
+                <input class="form-control" id="harga" name="harga" aria-describedby="emailHelp" pattern="[0-9]{1,10}" required>
             </div>
 
             <div class="mb-3">
